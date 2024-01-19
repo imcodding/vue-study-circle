@@ -1,0 +1,96 @@
+/* 메뉴 */
+.menu {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #eeeeee;
+}
+.menu a {
+  font-size: 16px;
+  margin-left: 15px;
+}
+.menu a:hover {
+  color: #b4b4b4
+}
+/* 스터디 만들기 버튼 */
+.studyBtn {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #40B783;
+  color: white;
+  margin-top: 40px;
+}
+.studyBtn:hover {
+  cursor: pointer;
+  background-color: rgba(64, 183, 132, 0.772);
+}
+/* 스터디 구분 */
+.studyKind {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.studyKind span {
+  margin-right: 20px;
+}
+.studyKind span:nth-child(odd):hover {
+  color: #b4b4b4;
+  cursor: pointer;
+}
+.studyKind span:nth-child(even) {
+  color: #b4b4b4;
+}
+/* 카테고리 */
+.category {
+  text-align: center;
+  margin-top: 10px;
+}
+.category ul {
+  display: inline-block;
+}
+.category ul li {
+  margin-right: 10px;
+  float: left;
+  background-color: #eeeeee;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 8px 5px 8px;
+}
+.category ul li:hover {
+  background-color: #b4b4b4b4;
+  cursor: pointer;
+}
+/* 보는 방식 */
+.viewType {
+  clear: both;
+  text-align: center;
+  margin-top: 15px;
+}
+.viewType span:hover {
+  color: #b4b4b4;
+  cursor: pointer;
+}
+/* 스터디 목록 */
+.studyList {
+  text-align: center;
+  margin-top: 15px;
+}
+.studyList table {
+  display: inline-block;
+  border-top: 1px solid #b4b4b4;
+}
+.studyList table tr:hover {
+  color: #40B783;
+  cursor: pointer;
+}
+.studyList table tr:first-child:hover {
+  color: black;
+  cursor: default;
+}
+.studyList table th, td {
+  border-bottom: 1px solid #eeeeee;
+  padding: 8px;
+}
