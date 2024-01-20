@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
+import checkAuth from '../middlewares/checkAuth'
 
 const router = createRouter({  
     history: createWebHistory(""),  
     routes: [ 
         { 
             path: "/", 
-            name: "home", 
+            name: "root", 
             component: () => import("../views/HomeView.vue") 
         },   
         { 
@@ -25,4 +26,10 @@ const router = createRouter({
         },
     ],
 }); 
+router.beforeEach((to, from, next) => {
+    const excludeAuthPath = ['root', 'login', 'home'];
+    const isAuthenticated = excludeAuthPath.indexOf(to.name) < 0 ? false : true;
+
+    checkAuth(next, isAuthenticated);
+});
 export default router;
