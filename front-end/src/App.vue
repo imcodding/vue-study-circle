@@ -1,6 +1,5 @@
 <template>
   <div>
-    <study-menu></study-menu>
     <router-view></router-view>
   </div>
 </template>

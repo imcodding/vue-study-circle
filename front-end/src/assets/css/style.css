@@ -94,3 +94,43 @@
   border-bottom: 1px solid #eeeeee;
   padding: 8px;
 }
+/* 로그인 */
+.loginContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginBox .title{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loginBox input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #b4b4b4;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.loginBtn {
+  width: 205px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.loginBtn:hover {
+  background-color: #333;
+}
+.loginBox .register {
+  text-align: center;
+  margin-top: 10px;
+}
+.loginBox .register:hover {
+  color: #40B783;
+  cursor: pointer;
+}
